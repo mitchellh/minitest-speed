@@ -27,5 +27,13 @@ end
 
 Run them:
 
-    $ ruby my_test.rb
-TODO
+    $ SPEED=1 ruby my_test.rb
+    Started
+    test_speed_of_hash_creation:   0.000000   0.000000   0.000000 (  0.000019)
+
+    Finished in 0.000753 seconds.
+
+    1 tests, 0 assertions, 0 failures, 0 errors, 0 skips
+
+With `SPEED` set, only the speed tests are run, and their output is easily visible.
+If `SPEED` is not set, then only non-speed tests are run.
